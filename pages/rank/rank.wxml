@@ -1,0 +1,23 @@
+<view class="card cardTop">
+    <view class="rankText">
+        排行榜
+    </view>
+      
+</view>
+
+<block wx:if="{{show}}">
+    <view class="card page-box">
+        <view>
+            <text class="rank">排行</text>
+            <text class="name">昵称</text>
+            <text class="core">分数</text>
+        </view>
+        <block wx:for="{{rankList}}" wx:key="user_id">
+            <view class="myList">
+                <text class="rank">{{index + 1}}</text>
+                <text class="name">{{item.user_uid}}</text>
+                <text class="core">{{item.core}}</text>
+            </view>
+        </block>
+    </view>
+</block>

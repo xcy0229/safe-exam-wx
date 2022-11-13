@@ -1,0 +1,42 @@
+<view class="page-info">
+    <!-- 头部 -->
+    <view class="header">
+        <view class="header-name-login">{{studentCode}}</view>
+        <view class="header-img">
+            <image src="/image/headPortrait.png"></image>
+        </view>
+    </view>
+    <!-- 主体 -->
+    <view class="page-box">
+        <view class="myList">
+            <view class="icon">
+                <image src="/image/myExam.png" />
+            </view>
+            <view class="list-text" bindtap="toMyExam">我的考试</view>
+        </view>
+        <view class="myList">
+            <view class="icon">
+                <image src="/image/collect.png" />
+            </view>
+            <view class="list-text" bindtap="toMyCollection">我的收藏</view>
+        </view>
+        <view class="myList">
+            <view class="icon">
+                <image src="/image/misQuestion.png" />
+            </view>
+            <view class="list-text" bindtap="toMyMisQuestion">我的错题</view>
+        </view>
+        <view class="myList">
+            <view class="icon">
+                <image src="/image/mySet.png" />
+            </view>
+            <view class="list-text" bindtap="toMySet">个人设置</view>
+        </view>
+        <view class="myList last">
+            <view class="icon">
+                <image src="/image/wireless-charging.png" />
+            </view>
+            <view class="list-text" bindtap="logout">退出登录</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,31 @@
+<view class='container'>
+    <view class="kb"></view>
+    <view class="bocc">
+        <image class='user-avatar' src='/image/headPortrait.png'></image>
+    </view>
+    <view class="M">
+        <text class='user-name'>{{studentCode}}</text>
+    </view>
+    <view>
+        <view class='item'>
+            <text>{{core}}分</text>
+            <view>考试成绩</view>
+        </view>
+    </view>
+</view>
+<view class='user-box' style="margin-top:20rpx;">
+    <view class='ctn'>
+        <view class='list'>
+            <text>{{time}}</text>
+            <view>考试用时</view>
+        </view>
+        <view class='list'>
+            <text>加油</text>
+            <view>考试结果</view>
+        </view>
+        <view class='list'>
+            <text>{{accuracy}}%</text>
+            <view>正确率</view>
+        </view>
+    </view>
+</view>

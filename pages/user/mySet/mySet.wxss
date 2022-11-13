@@ -1,0 +1,53 @@
+/* pages/user/mySet/mySet.wxss */
+page {
+    background-color: #f8f9fb;
+}
+
+.page-info {
+    padding: 10px;
+}
+
+/* 头部 */
+.header {
+    height: 300rpx;
+    padding: 10px;
+    line-height: 150rpx;
+    background-color: #fff;
+}
+
+.header .header-name-login {
+    width: 50%;
+    margin-left: 50rpx;
+    text-align: center;
+    line-height: 200rpx;
+    font-size: 40rpx;
+    display: inline-block;
+}
+
+.header .header-img {
+    float: right;
+}
+
+.header .header-img image {
+    width: 120px;
+    height: 120px;
+}
+
+/* 主体 */
+.page-box {
+    background-color: #fff;
+    margin-top: 10px;
+}
+/*按钮*/
+.loginBtnView {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.loginBtn {
+    width: 80%;
+    margin-top: 35px;
+}

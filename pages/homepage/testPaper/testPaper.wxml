@@ -1,0 +1,150 @@
+<view class="exam">
+    <!-- 头部 -->
+    <view class="sortnumber">
+        <view class="left">{{examPaperName}}</view>
+    </view>
+    <!-- 单选题试题 -->
+    <block wx:for="{{singleList}}" wx:key="id" wx:for-index="index" wx:for-item="single">
+        <view class="question">
+            <view class="title clearfix">
+                <view class="title-text left">第{{index + 1}}题</view>
+                <view class="title-type right">单选题</view>
+            </view>
+            <view class="subject">{{single.singleChoiceQuestion.choice_info}}</view>
+            <view class="options">
+                <radio-group bindchange="selectSingleOption" data-index="{{index}}">
+                    <block wx:if="{{null != single.singleChoiceQuestion.choice_option_A}}">
+                        <view class="option">
+                            <radio value="A" class="icon" />
+                            <view class="content">
+                                {{single.singleChoiceQuestion.choice_option_A}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != single.singleChoiceQuestion.choice_option_B}}">
+                        <view class="option">
+                            <radio value="B" class="icon" />
+                            <view class="content">
+                                {{single.singleChoiceQuestion.choice_option_B}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != single.singleChoiceQuestion.choice_option_C}}">
+                        <view class="option">
+                            <radio value="C" class="icon" />
+                            <view class="content">
+                                {{single.singleChoiceQuestion.choice_option_C}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != single.singleChoiceQuestion.choice_option_D}}">
+                        <view class="option">
+                            <radio value="D" class="icon" />
+                            <view class="content">
+                                {{single.singleChoiceQuestion.choice_option_D}}
+                            </view>
+                        </view>
+                    </block>
+                </radio-group>
+            </view>
+        </view>
+    </block>
+    <!-- 判断题试题 -->
+    <block wx:for="{{judgmentList}}" wx:key="id" wx:for-index="index" wx:for-item="judgment">
+        <view class="question">
+            <view class="title clearfix">
+                <view class="title-text left">第{{singleCount + index + 1}}题</view>
+                <view class="title-type right">判断题</view>
+            </view>
+            <view class="subject">{{judgment.judgmentQuestion.judgment_info}}</view>
+            <view class="options">
+                <radio-group bindchange="selectJudgmentOption" data-index="{{index}}">
+                    <view class="option">
+                        <radio value="1" class="icon">
+                            <view class="content">对</view>
+                        </radio>
+                    </view>
+                    <view class="option">
+                        <radio value="2" class="icon">
+                            <view class="content">错</view>
+                        </radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+    </block>
+    <!-- 多选题试题 -->
+    <block wx:for="{{multipleList}}" wx:key="id" wx:for-index="index" wx:for-item="multiple">
+        <view class="question">
+            <view class="title clearfix">
+                <view class="title-text left">第{{singleCount + judgmentCount + index + 1}}题</view>
+                <view class="title-type right">多选题</view>
+            </view>
+            <view class="subject">{{multiple.multipleChoiceQuestions.multiple_info}}</view>
+            <view class="options">
+                <checkbox-group bindchange="selectMultipleOption" data-index="{{index}}">
+                    <block wx:if="{{null != multiple.multipleChoiceQuestions.multiple_option_A}}">
+                        <view class="option">
+                            <checkbox value="A" class="icon" />
+                            <view class="content">
+                                {{multiple.multipleChoiceQuestions.multiple_option_A}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != multiple.multipleChoiceQuestions.multiple_option_B}}">
+                        <view class="option">
+                            <checkbox value="B" class="icon" />
+                            <view class="content">
+                                {{multiple.multipleChoiceQuestions.multiple_option_B}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != multiple.multipleChoiceQuestions.multiple_option_C}}">
+                        <view class="option">
+                            <checkbox value="C" class="icon" />
+                            <view class="content">
+                                {{multiple.multipleChoiceQuestions.multiple_option_C}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != multiple.multipleChoiceQuestions.multiple_option_D}}">
+                        <view class="option">
+                            <checkbox value="D" class="icon" />
+                            <view class="content">
+                                {{multiple.multipleChoiceQuestions.multiple_option_D}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != multiple.multipleChoiceQuestions.multiple_option_E}}">
+                        <view class="option">
+                            <checkbox value="E" class="icon" />
+                            <view class="content">
+                                {{multiple.multipleChoiceQuestions.multiple_option_E}}
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:if="{{null != multiple.multipleChoiceQuestions.multiple_option_F}}">
+                        <view class="option">
+                            <checkbox value="F" class="icon" />
+                            <view class="content">
+                                {{multiple.multipleChoiceQuestions.multiple_option_F}}
+                            </view>
+                        </view>
+                    </block>
+                </checkbox-group>
+            </view>
+        </view>
+    </block>
+    <!-- 按钮 -->
+    <view class="btn-area" bindtap="submit">
+        <view class="button">{{btnText}}</view>
+    </view>
+    <van-overlay show="{{ show }}">
+        <view class="show">
+            <view class='item'>
+                <view class="score">考试成绩：{{score}}分</view>
+            </view>
+            <view class="button"  bindtap="toIndex">返回首页</view>
+        </view>
+    </van-overlay>
+</view>

@@ -1,0 +1,31 @@
+page {
+  background-color: #f8f9fb;
+}
+.page-home {
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2px;
+}
+.exam-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200rpx;
+  width: 200rpx;
+  margin-left: -100rpx;
+  margin-top: -100rpx;
+  border: 1px solid lightblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200rpx;
+  background-color: #789262;
+}
+.exam-box .exam-text {
+  color: #161823;
+  font-weight: bolder;
+}
+.margin {
+  margin-top: 10rpx;
+}

@@ -1,0 +1,12 @@
+<view class="page-info">
+  <view wx:for="{{examSheet}}" wx:key="user_exam_id" wx:for-item="value">
+    <view class="page-box">
+      <view class="exam-name">{{value.exam_paper_name}}</view>
+      <view class="exam-time">
+        <view class="start-time">开始时间：{{value.start_time}}</view>
+        <view class="complete-time">结束时间：{{value.complete_time}}</view>
+      </view>
+      <view class="core">所得分数：{{value.core}}分</view>
+    </view>
+  </view>
+</view>

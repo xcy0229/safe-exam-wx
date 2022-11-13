@@ -1,0 +1,27 @@
+<view class="page-home">
+    <view>
+        <swiper class="home-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-color="#bfbfbf" indicator-active-color="#00ACED">
+            <block wx:for="{{bannerList}}" wx:key="imgurl">
+                <swiper-item>
+                    <image src="{{item.imgurl}}" style="width: 100%;height: 100%;border-radius: 10px;"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="margin">
+        <van-grid column-num="1" border="{{ false }}">
+            <van-grid-item icon="arrow-down" text="单项练习" />
+        </van-grid>
+        <van-grid column-num="3" border="{{ false }}">
+            <van-grid-item icon="records" link-type="navigateTo" bind:click="toSingleExercise" text="单选题" />
+            <van-grid-item icon="records" link-type="navigateTo" bind:click="toJudgmentExercise" text="判断题" />
+            <van-grid-item icon="records" link-type="navigateTo" bind:click="toMultipleExercise" text="多选题" />
+        </van-grid>
+    </view>
+    <view class="margin">
+        <van-grid column-num="2" border="{{ false }}">
+            <van-grid-item icon="newspaper-o" url="/pages/homepage/testPaper/testPaper" text="模拟考试" />
+            <van-grid-item icon="description" url="/pages/homepage/exam/exam" text="考试答题" />
+        </van-grid>
+    </view>
+</view>

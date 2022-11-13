@@ -1,0 +1,36 @@
+/* pages/user/myExam/myExam.wxss */
+page {
+  background-color: #f8f9fb;
+}
+.page-info {
+  padding: 10px;
+}
+.page-box {
+  padding: 10rpx;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5%;
+  color: rgba(61, 59, 79, .5);
+}
+.page-box .exam-name {
+  height: 50rpx;
+  text-align: center;
+  color: #3d3b4f;
+}
+.page-box .exam-time {
+  height: 120rpx;
+  margin: 0 10rpx;
+}
+.page-box .exam-time .start-time {
+  height: 60rpx;
+  text-align: left;
+}
+.page-box .exam-time .complete-time {
+  height: 60rpx;
+  text-align: left;
+}
+.page-box .core {
+  margin-right: 30rpx;
+  height: 50rpx;
+  text-align: right;
+}

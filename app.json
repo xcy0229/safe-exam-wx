@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/homepage/index/index",
+    "pages/user/user/user",
+    "pages/homepage/exam/exam",
+    "pages/user/myExam/myExam",
+    "pages/homepage/examComplete/examComplete",
+    "pages/user/mySet/mySet",
+    "pages/homepage/exercise/exercise",
+    "pages/rank/rank",
+    "pages/homepage/testPaper/testPaper"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "实验室安全教育考试系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/homepage/index/index",
+        "text": "主页",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexSelect.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜",
+        "iconPath": "image/ranking.png",
+        "selectedIconPath": "image/ranking-select.png"
+      },
+      {
+        "pagePath": "pages/user/user/user",
+        "text": "用户",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/userSelect.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

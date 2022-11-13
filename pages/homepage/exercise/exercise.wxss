@@ -1,0 +1,119 @@
+/* pages/homepage/exercise/exercise.wxss */
+page {
+    background-color: #f7f8fa;
+}
+
+.text-error {
+    color: #ff1919;
+}
+
+.text-success {
+    color: #4fc08d;
+}
+
+.card {
+    margin: 40rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    box-shadow: 0 8rpx 12rpx #ebedf0;
+    margin-bottom: 24rpx;
+    padding: 24rpx;
+}
+
+.info {
+    line-height: 2em;
+    color: #666;
+}
+
+.hilight-text {
+    color: #4fc08d;
+}
+
+.question-con {
+    margin-top: 20rpx;
+}
+
+.question-title {
+    font-size: 28rpx;
+    color: #000;
+}
+
+.question-options {
+    padding: 10rpx 0;
+}
+
+.options-item {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin: 16rpx 0;
+    padding: 16rpx 30rpx;
+}
+
+.options-item_checked {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin: 16rpx 0;
+    padding: 16rpx 30rpx;
+
+    background-color: #ebfff0;
+    color: #4fc08d;
+}
+
+.options-item_error {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin: 16rpx 0;
+    padding: 16rpx 30rpx;
+
+    background-color: #fff0f0;
+    color: #ff1919;
+}
+
+.options-item_missing {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin: 16rpx 0;
+    padding: 16rpx 30rpx;
+    border-radius: 999rpx;
+
+    background-color: #fff0f0;
+    color: #ff1919;
+
+    position: relative;
+}
+
+.options-item_missing::after {
+    content: "未选择";
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    font-size: 20rpx;
+    line-height: 1.5em;
+    padding: 0 10rpx;
+    background-color: #ff1919;
+    color: white;
+}
+
+.desc-block {
+    margin: 16rpx 0;
+    font-size: 26rpx;
+}
+
+.answer-row {
+    padding: 0 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-con {
+    margin-top: 20rpx;
+    padding: 20rpx;
+}
+
+
+.btn-row {
+    margin: 40rpx 0;
+    display: flex;
+    justify-content: space-around;
+}

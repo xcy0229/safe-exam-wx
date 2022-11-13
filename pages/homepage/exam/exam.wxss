@@ -1,0 +1,91 @@
+/* pages/exam/exam.wxss */
+page {
+  background-color: #f8f9fb;
+}
+/* 头部 */
+.exam .sortnumber {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.exam .sortnumber .left {
+  color: #b9bfc6;
+}
+/* 试题 */
+.exam .question {
+  background-color: #f8f9fb;
+  padding: 10px;
+}
+/* 标题 */
+.exam .question .title {
+  height: 80rpx;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.exam .question .title .left {
+  float: left;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #000;
+  font-weight: bolder;
+  margin-right: 16rpx;
+}
+.exam .question .title .right {
+  float: left;
+  width: 130rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #1bcfad;
+}
+
+.exam .question .subject {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.exam .question .options {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.exam .question .options .option {
+  padding: 10px;
+  border-bottom: 1rpx solid #f8f9fb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.exam .question .options .option .icon image {
+  width: 20px;
+  height: 20px;
+}
+.exam .question .options .option .content {
+  padding-left: 5px;
+}
+
+.exam .btn-area {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.exam .btn-area .button {
+  color: #fff;
+  text-align: center;
+  background-color: #1bcfad;
+  border-radius: 20px;
+  width: 375rpx;
+  padding: 5px 15px;
+}

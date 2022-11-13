@@ -1,0 +1,56 @@
+/* pages/user/user.wxss */
+page {
+  background-color: #f8f9fb;
+}
+.page-info {
+  padding: 10px;
+}
+/* 头部 */
+.header {
+  height: 300rpx;
+  padding: 10px;
+  line-height: 150rpx;
+  background-color: #fff;
+}
+.header .header-name-login {
+  width: 50%;
+  margin-left: 50rpx;
+  text-align: center;
+  line-height: 200rpx;
+  font-size: 40rpx;
+  display: inline-block;
+}
+.header .header-img {
+  float: right;
+}
+.header .header-img image {
+  width: 120px;
+  height: 120px;
+}
+/* 主体 */
+.page-box {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.page-box .myList {
+  height: 100rpx;
+  padding: 10rpx;
+  margin: 0 20px;
+  border-bottom: 1px solid #e3e5e9;
+}
+.page-box .myList .icon {
+  float: left;
+}
+.page-box .myList .icon image {
+  width: 20px;
+  height: 20px;
+  margin-top: 30rpx;
+}
+.page-box .myList .list-text {
+  float: left;
+  line-height: 100rpx;
+  margin-left: 10px;
+}
+.page-box .last {
+  border-bottom: none;
+}
